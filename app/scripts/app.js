@@ -5,6 +5,13 @@
              enabled: true,
              requireBase: false
          });
+         
+       $stateProvider
+        .state('home', {
+           url: '/',
+           controller: 'MainCtrl as main',
+           templateUrl: '/templates/main.html'
+           });
    
      }
   angular
