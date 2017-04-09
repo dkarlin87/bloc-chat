@@ -7,5 +7,5 @@
     
      angular
          .module('blocChat')
-         .controller('MainCtrl', ['Room', MainCtrl]);
+         .controller('MainCtrl', ['room', 'message' MainCtrl]);
  })();

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="BlocChat">
+<html ng-app="blocChat">
 <head lang="en">
     <meta charset="UTF-8">
     <title>Bloc Base Project</title>
@@ -7,18 +7,23 @@
 </head>
 
 <body>
-    <div ui-view></div>
-    <script src="/scripts/app.js"></script>
+    
+   <h1>Bloc Chat</h1>
+    
+    <ui-view></ui-view>
+    
     
     <!-- Angular -->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
     <!-- AngularFire -->
     <script src="https://cdn.firebase.com/libs/angularfire/2.0.1/angularfire.min.js"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.1.4/ui-bootstrap-tpls.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
 <!-- Firebase -->
     
     <script src="https://www.gstatic.com/firebasejs/3.7.4/firebase.js"></script>
     <script>
+        
       // Initialize Firebase
       var config = {
         apiKey: "AIzaSyDe830I2lOTHmIfMox-2sG0Qa_uvNqLOZ8",
@@ -30,9 +35,16 @@
 
       firebase.initializeApp(config);
     </script>
-    <script src="scripts/services/room.js"></script>
-    <script src="scripts/controllers/home.js"></script>
-    <script src="scripts/services/ui-bootstrap.js"></script>
+    <script src="/scripts/app.js"></script>
+    <script src="/scripts/services/room.js"></script>
+    <script src="scripts/services/message.js"></script>
+    <script src="/scripts/controllers/MainCtrl.js"></script>
+    <script src="/scripts/controllers/AddRoomCtrl.js"></script>
+    <script src="scripts/services/cookies.js"></script>
+   <script src="scripts/controllers/LoginCtrl.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-cookies.js"></script>
+    
+    
 </body>
     
 </html>
