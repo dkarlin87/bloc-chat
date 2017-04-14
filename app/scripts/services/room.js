@@ -5,7 +5,7 @@
 
     return {
       all: rooms,
-      addRoom: function(room) {
+      add: function(room) {
         rooms.$add({name: room});
       }  
     };
